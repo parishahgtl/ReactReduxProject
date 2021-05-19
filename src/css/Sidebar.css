@@ -1,0 +1,11 @@
+   .menu {
+    background: #34495e;
+    height: 100vh;
+    width: 250px;
+    opacity:0; 
+    positon: absolute;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    transform: translateX(-50%);
+  }
+   
