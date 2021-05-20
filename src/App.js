@@ -18,7 +18,6 @@ import {
 } from "react-router-dom";
 import { Provider } from "react-redux";
 import { configureStore } from "./store";
-import {socket} from './index.js'
 
 const store = configureStore();
 export default class App extends Component {
@@ -42,11 +41,7 @@ export default class App extends Component {
       })
       .catch(err => {
         console.log(err);
-      });
-       socket.on('msg', function (data) {
-            // console.log("in function")
-            console.log(data)
-        })
+      });     
 
   }
   setUserAuthentication(value) {

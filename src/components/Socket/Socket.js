@@ -4,7 +4,6 @@ import {socket} from '../../index.js'
 export default class Socket extends Component {
     componentDidMount(){
         socket.on('msg',data =>{
-
             console.log(data);
         })
     }

@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SocketClient from 'socket.io-client';
+import {io} from 'socket.io-client';
 
-export const socket = SocketClient('http://127.0.0.1:1111')
+export const socket = io('http://10.0.2.18:1111',{transports: ['websocket', 'polling', 'flashsocket']})
 
 ReactDOM.render( 
     <React.StrictMode >
